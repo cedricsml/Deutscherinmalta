@@ -20,7 +20,7 @@ h1, h2, h3 {
 
 /* Hero Section */
 .hero {
-    background-image: url('bilder/malta-hero.jpg');
+    background-image: url('https://source.unsplash.com/1600x900/?malta,sea');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -124,12 +124,24 @@ footer p {
     margin: 0;
 }
 
-/* Scroll Animations */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .gallery img {
+        width: 100%;
+    }
 }
 
-.section {
-    animation: fadeIn 2s ease-in-out;
+@media (max-width: 480px) {
+    .cta-button {
+        font-size: 1rem;
+        padding: 8px 20px;
+    }
 }
